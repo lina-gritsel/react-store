@@ -37,13 +37,8 @@ export const Content: FC = () => {
         </div>
         <h2 className={styles.title}>Все пиццы</h2>
         <div className={styles.contentItems}>
-          {TYPES_PIZZA.map(({image,name, price}, id) => (
-            <Card
-              key={id}
-              image={image}
-              name={name}
-              price={price}
-            />
+          {TYPES_PIZZA.map(({ image, name, price }, id) => (
+            <Card key={id} image={image} name={name} price={price} />
           ))}
         </div>
       </div>

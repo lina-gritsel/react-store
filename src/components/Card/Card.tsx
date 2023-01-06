@@ -18,7 +18,7 @@ enum Kinds {
 
 enum Sizes {
   SMALL = '26',
-  AVERAGE = '30',
+  MEDIUM = '30',
   LARGE = '40',
 }
 
@@ -34,10 +34,9 @@ const Card: FC<CardProps> = ({ image, name, price }) => {
       <div className={styles.selector}>
         <ul className={styles.cartList}>
           <li
-            className={classNames(
-              styles.value,
-              activeKinds === Kinds.THIN && styles.activeValue,
-            )}
+            className={classNames(styles.value, {
+              [styles.activeValue]: activeKinds === Kinds.THIN,
+            })}
             onClick={() => setActiveKinds(Kinds.THIN)}
           >
             {Kinds.THIN}
@@ -65,11 +64,11 @@ const Card: FC<CardProps> = ({ image, name, price }) => {
           <li
             className={classNames(
               styles.value,
-              activeSize === Sizes.AVERAGE && styles.activeValue,
+              activeSize === Sizes.MEDIUM && styles.activeValue,
             )}
-            onClick={() => setActiveSize(Sizes.AVERAGE)}
+            onClick={() => setActiveSize(Sizes.MEDIUM)}
           >
-            {Sizes.AVERAGE}
+            {Sizes.MEDIUM}
           </li>
           <li
             className={classNames(
@@ -84,7 +83,7 @@ const Card: FC<CardProps> = ({ image, name, price }) => {
       </div>
       <div className={styles.cartBottom}>
         <div className={styles.cartPrice}>от {price} ₽</div>
-        <Button onClick={() => setProductCount((prev) => prev + 1)}>
+        <Button outlined onClick={() => setProductCount((prev) => prev + 1)}>
           <PlusIcon />
           <span className={styles.add}>Добавить</span>
           <i className={styles.amount}>{productCount}</i>

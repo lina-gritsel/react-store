@@ -5,7 +5,7 @@ import { Content } from './components/Content'
 
 const App: FC = () => {
   return (
-    <div className="App">
+    <div className="wrapper">
       <Header />
       <Content />
     </div>
