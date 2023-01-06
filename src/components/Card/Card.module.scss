@@ -1,5 +1,5 @@
  .pizzaBlock {
-    width: 280px;
+    width: 380px;
     text-align: center;
     margin-bottom: 65px;
   
@@ -44,12 +44,29 @@
     flex: 1;
     cursor: pointer;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     background: #ffffff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
     border-radius: 5px;
     cursor: auto;
     list-style-type: none;
+  }
+
+  .value{
+    padding: 8px;
+    flex: 1;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    list-style-type: none;
+
+    // @include noselect();
+    &.active {
+      background: #ffffff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+      border-radius: 5px;
+      cursor: auto;
+    }
   }
 
   .cartBottom {
@@ -74,7 +91,7 @@
   .amount {
     display: inline-block;
     border-radius: 30px;
-    background-color: #f3921c;
+    background-color:#eb5a1e;
     color: #fff;
     font-weight: 600;
     width: 22px;

@@ -42,8 +42,6 @@ export const Content: FC = () => {
               key={id}
               image={image}
               name={name}
-              kinds={['тонкое', 'традиционное']}
-              sizes={['26 см.', '30 см.', '40 см.']}
               price={price}
             />
           ))}

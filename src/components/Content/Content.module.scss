@@ -15,7 +15,7 @@
 
 .categoriesList {
   display: flex;
-  margin-left: 0; 
+  margin-left: 0;
   padding-left: 0;
   // @include noselect();
 
@@ -49,6 +49,13 @@
   margin: 35px 0;
 }
 
+.contentItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 55px;
+}
+
 .sort {
   position: relative;
 }
@@ -67,7 +74,7 @@
 
 .popupList {
   overflow: hidden;
-  margin-left: 0; 
+  margin-left: 0;
   padding-left: 0;
 }
 
@@ -126,9 +133,4 @@
   }
 }
 
-.contentItems {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  
-}
+

@@ -1,0 +1,59 @@
+.button {
+  background-color: #fff;
+  border-color: #eb5a1e;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 10px 20px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  span {
+    color: #eb5a1e;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &:hover {
+    i {
+      background-color: #fff;
+      color: #eb5a1e;
+    }
+  }
+
+
+  svg {
+    margin-right: 2px;
+
+    path {
+      fill: #eb5a1e;
+    }
+  }
+
+  &:hover {
+    background-color: #eb5a1e;
+
+    &,
+    span {
+      color: #fff;
+    }
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &:active {
+    background-color: darken(#eb5a1e, 8%);
+  }
+}
+
+.rootButton {
+  background-color: #fff;
+  border-color: #eb5a1e;
+}
+
+
