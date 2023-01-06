@@ -19,8 +19,8 @@ export const Header: FC = () => {
           <a href="/cart.html" className={styles.button}>
             <span>520 ₽</span>
             <div className={styles.delimiter}></div>
-            <Icon />
-            <span>3</span>
+            <Icon/>
+            <span className={styles.amountCart}>3</span>
           </a>
         </div>
       </div>

@@ -9,11 +9,7 @@
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-}
-
-.cart {
-  max-width: 820px;
-  margin: 90px auto;
+  height: 55px;
 }
 
 .headerContent {
@@ -36,27 +32,32 @@
   color: #7b7b7b;
 }
 
+.cart {
+  max-width: 820px;
+  // margin: 90px auto;
+}
+
 .button {
-  background-color: #f3921c;
+  background-color: #fe5f1e;
   border-radius: 30px;
   min-width: 100px;
   text-align: center;
   cursor: pointer;
   border: 1px solid transparent;
-
   display: flex;
   align-items: center;
   line-height: 23px;
   padding: 12px 25px;
+  text-decoration: none;
+
+  span {
+    color: #ffffff;
+    font-weight: 600;
+  }
 
   svg {
     margin-right: 8px;
     margin-bottom: 1px;
-  }
-
-  span {
-    font-weight: 600;
-    font-size: 16px;
   }
 }
 
@@ -66,4 +67,9 @@
   background-color: rgba(255, 255, 255, 0.25);
   margin-left: 14px;
   margin-right: 14px;
+}
+
+.amountCart {
+  font-weight: 600;
+  font-size: 16px;
 }
