@@ -22,7 +22,7 @@ enum Sizes {
   LARGE = '40',
 }
 
-const Card: FC<CardProps> = ({ image, name, price }) => {
+export const Card: FC<CardProps> = ({ image, name, price }) => {
   const [productCount, setProductCount] = useState<number>(0)
   const [activeSize, setActiveSize] = useState<Sizes>(Sizes.SMALL)
   const [activeKinds, setActiveKinds] = useState<Kinds>(Kinds.THIN)
@@ -93,4 +93,4 @@ const Card: FC<CardProps> = ({ image, name, price }) => {
   )
 }
 
-export default Card
+

@@ -2,24 +2,16 @@ import { FC } from 'react'
 
 import styles from './Content.module.scss'
 import { SortIcon } from '../../icons'
-import Card from '../Card/Card'
+import { Card } from '../Card/Card'
 import { TYPES_PIZZA } from './mocData'
+import { Categories } from '../Categories'
 
 export const Content: FC = () => {
   return (
     <div className={styles.content}>
       <div className={styles.container}>
         <div className={styles.top}>
-          <div className={styles.categories}>
-            <ul className={styles.categoriesList}>
-              <li className={styles.categoriesValue}>Все</li>
-              <li className={styles.categoriesValue}>Мясные</li>
-              <li className={styles.categoriesValue}>Вегетарианская</li>
-              <li className={styles.categoriesValue}>Гриль</li>
-              <li className={styles.categoriesValue}>Острые</li>
-              <li className={styles.categoriesValue}>Закрытые</li>
-            </ul>
-          </div>
+         <Categories/>
           <div className={styles.sort}>
             <div className={styles.label}>
               <SortIcon />
