@@ -1,0 +1,31 @@
+.categoriesList {
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+  // @include noselect();
+}
+
+.categoriesValue {
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 13px 30px;
+  transition: background-color 0.1s ease-in-out;
+  font-weight: bold;
+  user-select: none;
+  list-style-type: none;
+
+  &:hover {
+    background-color: darken(#f9f9f9, 2%);
+  }
+
+  &:active {
+    background-color: darken(#f9f9f9, 5%);
+  }
+
+  &.active {
+    background-color: #282828;
+    color: #fff;
+  }
+}

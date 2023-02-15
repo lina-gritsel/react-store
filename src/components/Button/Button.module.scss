@@ -1,0 +1,88 @@
+.primaryButton {
+  background-color: #eb5a1e;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  min-width: 100px;
+  padding: 12px 25px;
+  text-align: center;
+  line-height: 23px;
+  text-decoration: none;
+
+  span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  i {
+    background-color: #fff;
+    color: #eb5a1e;
+  }
+
+  svg {
+    margin-right: 2px;
+
+    path {
+      fill: #fff;
+    }
+  }
+  &:active {
+    background-color: darken(#eb5a1e, 8%);
+  }
+}
+
+.outlined {
+  background-color: #fff;
+  border-color: #eb5a1e;
+  text-align: center;
+  padding: 10px 20px;
+
+
+  span {
+    color: #eb5a1e;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  i {
+    background-color: #eb5a1e;
+    color: #fff;
+  }
+
+  &:hover {
+    i {
+      background-color: #fff;
+      color: #eb5a1e;
+    }
+  }
+
+  svg {
+    margin-top: 5px;
+
+    path {
+      fill: #eb5a1e;
+    }
+  }
+
+  &:hover {
+    background-color: #eb5a1e;
+
+    &,
+    span {
+      color: #fff;
+    }
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+
+  &:active {
+    background-color: darken(#eb5a1e, 8%);
+  }
+}
